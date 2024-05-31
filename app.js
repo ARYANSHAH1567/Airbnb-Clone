@@ -93,15 +93,7 @@ app.use((req, res, next) => {
     next();
 });
 
-// Demo Register
-// app.get("/demouser", async(req, res) => {
-//     let fuser = new User ({
-//         email: "suna@gmail.ocm",
-//         username: "sunax"
-//     });
-//     let regUser = await User.register(fuser, "helloworld");
-//     res.send(regUser);
-// });
+
 
 // Router Middle Ware ↓
 app.use("/listings", listingRouter);
@@ -119,6 +111,8 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(8080, () => {
-    console.log("listning port 8080");
+const PORT = process.env.PORT || 8080
+
+app.listen(PORT, () => {
+    console.log(`listning port ${PORT}`);
 });

@@ -5,11 +5,13 @@
   "name": "Airbnb-Clone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev" : "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aryan Shah",
+  "author": "Aryan_Shah",
   "license": "ISC",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.15.6",
