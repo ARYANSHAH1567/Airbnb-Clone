@@ -14,7 +14,7 @@ module.exports.signup = async (req, res) => {
             if(err) {
                 return next(err)
             }
-            req.flash("success", "Well Come To Airbnb Clone");
+            req.flash("success", "Welcome To Airbnb");
             res.redirect("/listings");
         });
     }
@@ -29,7 +29,7 @@ module.exports.renderLoginForm = (req, res) => {
 };
 
 module.exports.login = async (req, res) => {
-    req.flash("success", "Wellcome Back Airbnb Clone!");
+    req.flash("success", "Welcome Back Airbnb Clone!");
     let redirectUrl = res.locals.redirectUrl || "/listings";
     res.redirect("/listings")
 };
