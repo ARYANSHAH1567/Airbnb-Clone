@@ -133,7 +133,7 @@ body {
 
 /* Review Section */
 .review-card {
-    border: none !important;
+    border: 2px solid black;
     background-size: 13px 13px, calc(100% - 26px) 2px, 13px 13px, 2px calc(100% - 26px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
